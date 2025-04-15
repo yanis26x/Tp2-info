@@ -1,0 +1,12 @@
+services:
+  frontend:
+    image: yanisschool/tp2-2270566-6242559-frontend:v1
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    image: yanisschool/tp2-2270566-6242559-backend:v1
+    ports:
+      - "8787:8787"
